@@ -4,7 +4,7 @@ require 'rubygems'
 require 'open-uri'
 require 'nokogiri'
 
-File.open("heros.txt",'w') do |f|
+File.open("heroes.txt",'w') do |f|
 	url = "http://dotabuff.com/heroes/played?date=month"
 	page = Nokogiri::HTML(open(url))
 	hero=[]
